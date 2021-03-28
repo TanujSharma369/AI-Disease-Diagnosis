@@ -5,6 +5,7 @@ from keras.preprocessing import image
 import numpy as np
 
 
+
 def home(request):
     return render(request,'home.html')
 
@@ -31,7 +32,7 @@ def resulttumor(request):
     filepathname = fs.save(fileobj.name,fileobj)
     filepathname = fs.url(filepathname)
     mriImage = "."+filepathname
-    classifier = load_model('./brainTumorModel.h5')
+    classifier = load_model('./brainTumorModel.h5',compile=False)
     imgpred = image.load_img(mriImage,target_size=(64,64))
     imgpred = image.img_to_array(imgpred)
     imgpred = np.expand_dims(imgpred,axis=0)
@@ -53,7 +54,7 @@ def resultpnu(request):
     filepathname = fs.save(fileobj.name,fileobj)
     filepathname = fs.url(filepathname)
     pnuImage = "."+filepathname
-    classifier = load_model('./pnuemonia.h5')
+    classifier = load_model('./pnuemonia.h5',compile=False)
     imgpred = image.load_img(pnuImage,target_size=(64,64))
     imgpred = image.img_to_array(imgpred)
     imgpred = np.expand_dims(imgpred,axis=0)
@@ -76,7 +77,7 @@ def resulttb(request):
     filepathname = fs.save(fileobj.name,fileobj)
     filepathname = fs.url(filepathname)
     tbimg = "."+filepathname
-    classifier = load_model('./tuberclosis.h5')
+    classifier = load_model('./tuberclosis.h5',compile=False)
     imgpred = image.load_img(tbimg,target_size=(64,64))
     imgpred = image.img_to_array(imgpred)
     imgpred = np.expand_dims(imgpred,axis=0)
@@ -97,7 +98,7 @@ def resultbreast(request):
     filepathname = fs.save(fileobj.name,fileobj)
     filepathname = fs.url(filepathname)
     breastimg = "."+filepathname
-    classifier = load_model('./tuberclosis.h5')
+    classifier = load_model('./tuberclosis.h5',compile=False)
     imgpred = image.load_img(breastimg,target_size=(64,64))
     imgpred = image.img_to_array(imgpred)
     imgpred = np.expand_dims(imgpred,axis=0)
