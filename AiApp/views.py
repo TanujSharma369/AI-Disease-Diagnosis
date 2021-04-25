@@ -88,8 +88,8 @@ def resulttb(request):
         message = "TB DETECTED"
     dict =   {'filepathname':filepathname,'message':message,'name':name,'age':age,'gender':gender}
     return render(request,'resulttb.html',dict)
-#detecting Breast Cancer
 
+#detecting Breast Cancer
 def resultbreast(request):
     fileobj = request.FILES['breastcancer']
     name = request.POST.get('name',0)
