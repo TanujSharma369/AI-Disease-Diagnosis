@@ -25,6 +25,7 @@ def breastForm(request):
 def resulttumor(request):
     fileobj = request.FILES['braintumor']
     name = request.POST.get('name',0)
+    email = request.POST.get('email',0)
     age = request.POST.get('age',0)
     gender = request.POST.get('gender',0)
     #print(name)
@@ -41,7 +42,7 @@ def resulttumor(request):
         message = "Healthy Brain"
     if result[0][1]==1:
         message = "Having Tumor"
-    dict = {'filepathname':filepathname,'message':message,'age':age,'name':name,'gender':gender}
+    dict = {'filepathname':filepathname,'message':message,'age':age,'name':name,'gender':gender, 'email':email}
     return render(request,'resulttumor.html',dict)
 
 #detecting pnuemonia
