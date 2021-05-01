@@ -1,7 +1,6 @@
 /* se1 */
 #tittle{
     background-color: #456268;
-    height: 90%;
 }
 .navbar-brand{
     font-weight: bold;
@@ -17,23 +16,34 @@ h1{
 .nav-item{
     padding: 0 2rem;
 }
-
-/* sec2 */
-#sc2{
-    background-color: #79a3b1;
+/*sec2*/
+.card-img-top{
+    height: 12rem;
+    width: 18rem;
 }
 .card{
-    margin: 5rem 5rem 5rem 0;
-    background-color: #d0e8f2;
+    margin-right: 10.5rem;
 }
-.card-text{
+.card-body{
+    background-color: #fcf8ec;
+}
+.main-title{
+    padding: 8rem 0 8rem 8rem;
     font-family: Montserrat;
     color: #456268;
     font-size: 1.3rem;
-    text-align: center;
+    font-size: 2rem;
 }
-.btn{
-    text-align: center;
-    padding: .5rem 2.8rem ;
+#top-card{
+    width: 30%;
+}
+#webInfo{
+    width: 67%;
+}
+#secondrow{
     margin-left: 7rem;
+    padding: 2rem 0 4rem 0;
+}
+#firstrow{
+    padding-top: 3rem;
 }
