@@ -4,8 +4,8 @@
   <head>
     <meta charset="utf-8">
     <title>AI DETECT</title>
-    
-      <link rel="stylesheet" href="{%static 'homeStyle.css'%}">
+      <link rel="stylesheet" href="{%static 'homeCSS.css'%}">
+
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
       <link rel="preconnect" href="https://fonts.gstatic.com">  
       <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet"> 
@@ -33,55 +33,49 @@
         </nav>
       </div>
     </section>
-
-    <section id="sc2">
-      <div class="container">
-        <div class="row">
-          
-          <div class="col-md-6" style="padding-left: 2rem;">
-            <div class="card mb-4 box-shadow" id="brainCard">
-              <img class="card-img-top"  alt="Thumbnail [100%x225]" style="height: 225px; width: 80%; display: block;" src="{% static 'brain-tumor.webp'%}" data-holder-rendered="true">
-              <div class="card-body">
-                <p class="card-text">BRAIN TUMOR DETECTION.</p>
-                <a href="{% url 'brainForm' %}"><button type="button" class="btn btn-outline-dark">Proceed</button></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="card mb-4 box-shadow" id="pnuCard">
-              <img class="card-img-top"  alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="{% static 'tuber.jpg'%}" data-holder-rendered="true">
-              <div class="card-body">
-                <p class="card-text">Detect Tuberculosis</p>
-                <a href="{% url 'tbForm' %}"><button type="button" class="btn btn-outline-dark">Proceed</button></a>
-              </div>
-            </div>
+    <section id="new">
+      <div class="row" id="firstrow">
+        <div id="webInfo">
+          <h1 class="main-title">We care.<br> Caring is our superpower.<br> Advanced Intelligence Disease Testing.</h1>
+        </div>
+        <div class="card" style="width: 18rem;" id="top-card">
+          <img class="card-img-top" src="{% static 'brain-tumor.webp'%}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">brain-tumor</h5>
+            <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="{% url 'brainForm' %}"><button type="button" class="btn btn-outline-dark">Proceed</button></a>
           </div>
         </div>
-
-        <div class="row">
-          <div class="col-md-6">
-            <div class="card mb-4 box-shadow">
-              <img class="card-img-top"  alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="{% static 'pnue.jpg'%}" data-holder-rendered="true">
-              <div class="card-body">
-                <p class="card-text">DETECT Pnuemonia.</p>
-                <a href="{% url 'pueForm' %}"><button type="button" class="btn btn-outline-dark">Proceed</button></a>
-              </div>
-            </div>
+      </div>
+      <div class="row" id="secondrow">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="{% static 'tuber.jpg'%}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Detect Tuberculosis</h5>
+            <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="{% url 'tbForm' %}"><button type="button" class="btn btn-outline-dark">Proceed</button></a>
           </div>
-
-          <div class="col-md-6">
-            <div class="card mb-4 box-shadow">
-              <img class="card-img-top"  alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="{% static 'bcancer.jpg' %}" data-holder-rendered="true">
-              <div class="card-body">
-                <p class="card-text">DETECT BREAST CANCER.</p>
-                <a href="{% url 'breastForm' %}"><button type="button" class="btn btn-outline-dark">Proceed</button></a>
-              </div>
-            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="{% static 'pnue.jpg'%}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">DETECT Pnuemonia.</h5>
+            <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="{% url 'pueForm' %}"><button type="button" class="btn btn-outline-dark">Proceed</button></a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="{% static 'bcancer.jpg' %}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">DETECT BREAST CANCER</h5>
+            <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="{% url 'breastForm' %}"><button type="button" class="btn btn-outline-dark">Proceed</button></a>
           </div>
         </div>
       </div>
     </section>
+
+    
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
