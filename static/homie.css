@@ -1,14 +1,17 @@
 /* se1 */
+p{
+    color: #52616b;
+}
 #tittle{
-    background-color: #456268;
+    background-color: #c9d6df;
 }
 .navbar-brand{
     font-weight: bold;
     font-size: 2.5 rem;
     font-family: cursive;
 }
-h1{
-    color: 456268;
+#AI{
+    color: #52616b;
 }
 #div1{
     padding: .5rem .5rem .5rem 2rem; 
@@ -21,16 +24,22 @@ h1{
     height: 12rem;
     width: 18rem;
 }
+#message{
+    color: #52616b;
+}
+#new{
+    color: #f0f5f9;
+}
 .card{
     margin-right: 10.5rem;
 }
 .card-body{
-    background-color: #fcf8ec;
+    background-color: #c9d6df;
 }
 .main-title{
     padding: 8rem 0 8rem 8rem;
     font-family: Montserrat;
-    color: #456268;
+    color: #52616b;
     font-size: 1.3rem;
     font-size: 2rem;
 }
@@ -46,4 +55,7 @@ h1{
 }
 #firstrow{
     padding-top: 3rem;
+}
+.card-title{
+    color: #52616b;
 }
